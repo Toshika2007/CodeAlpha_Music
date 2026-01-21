@@ -1,0 +1,146 @@
+/* ===== GLOBAL ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  margin: 0;
+
+  /* 🎵 SPOTIFY-STYLE MUSIC BACKGROUND */
+  background: linear-gradient(
+    135deg,
+    #1db954,
+    #191414,
+    #0f3d24
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* ===== MAIN PLAYER BOX ===== */
+.player {
+  background: #000;
+  width: 900px;
+  min-height: 650px;
+  padding: 40px;
+  border-radius: 30px;
+  text-align: center;
+
+  box-shadow:
+    0 25px 50px rgba(0, 0, 0, 0.8),
+    0 0 35px rgba(29, 185, 84, 0.6);
+}
+
+/* ===== SONG TITLE ===== */
+h2 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+/* ===== ARTIST NAME ===== */
+h4 {
+  font-size: 18px;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+/* ===== ALBUM IMAGE ===== */
+.album-cover {
+  width: 220px;
+  height: 220px;
+  margin: 20px auto 30px;
+  display: block;
+  border-radius: 20px;
+  object-fit: cover;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.9),
+    0 0 25px rgba(29, 185, 84, 0.6);
+}
+
+/* ===== PROGRESS BAR ===== */
+.progress-container {
+  background: #333;
+  height: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 25px 0;
+}
+
+.progress {
+  background: #1db954;
+  height: 100%;
+  width: 0%;
+  border-radius: 10px;
+}
+
+/* ===== TIME ===== */
+.time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #ccc;
+}
+
+/* ===== CONTROLS ===== */
+.controls {
+  margin: 30px 0;
+}
+
+.controls button {
+  background: #1db954;
+  border: none;
+  color: black;
+  width: 65px;
+  height: 65px;
+  margin: 0 15px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.controls button:hover {
+  transform: scale(1.15);
+}
+
+/* ===== VOLUME ===== */
+.volume {
+  margin: 25px 0;
+  font-size: 16px;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #1db954;
+}
+
+/* ===== PLAYLIST ===== */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+  text-align: left;
+}
+
+ul li {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ul li:hover {
+  background: #1db954;
+  color: black;
+}
